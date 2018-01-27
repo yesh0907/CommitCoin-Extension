@@ -1,5 +1,11 @@
+const actions = {
+  ADD_STAR: 1,
+  REMOVE_STAR: 2,
+  START_MINING: 3,
+  STOP_MINING: 4
+}
+
 var storage = chrome.storage.local;
-var body = document.body;
 var miningIcon = document.getElementById("miningIcon");
 var miningButton = document.getElementById("miningButton");
 
@@ -33,6 +39,7 @@ function startStopMining(){
 
 function startMining() {
   miningIcon.src="icon-new.gif";
+  chrome.runtime.sendMessage({ action: actions.START_MINING });
   miningButton.innerHTML="CONNECTING...";
 
   setTimeout(function(){
@@ -54,4 +61,6 @@ function stopMining() {
   chrome.browserAction.setIcon({path:"images/icon.png"});
   miningIcon.src="images/icon-new-op.png";
   miningButton.innerHTML="START";
+  chrome.runtime.sendMessage({ action: actions.STOP_MINING });
+  chrome.browserAction.setIcon({path:"images/icon.png"});
 }
