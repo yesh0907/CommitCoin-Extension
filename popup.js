@@ -1,5 +1,5 @@
 var storage = chrome.storage.local;
-var miningText = document.getElementById("miningText");
+var body = document.body;
 var miningIcon = document.getElementById("miningIcon");
 var miningButton = document.getElementById("miningButton");
 
@@ -32,34 +32,26 @@ function startStopMining(){
 }
 
 function startMining() {
-  miningIcon.src="icon.gif";
-
-  miningText.innerText="CONNECTING";
-  miningText.style.color="#969696";
-
+  miningIcon.src="icon-new.gif";
   miningButton.innerHTML="CONNECTING...";
 
   setTimeout(function(){
     chrome.browserAction.setIcon({path:"images/icon-activated.png"});
+    miningIcon.src="images/icon-new-white.png";
+    miningButton.innerHTML="STOP";
 
-    miningIcon.src="images/icon-blue.png";
-
-    miningText.innerText="MINING";
-    miningText.style.color="#1B9CE2";
-
-    miningButton.innerHTML="<i class=\"material-icons right\">money_off</i>STOP";
+    body.style.backgroundColor = "#1b9ce2";
+    body.style.color = "white";
   }, 2000);
 
 
 }
 
 function stopMining() {
+  body.style.backgroundColor = "#F5F5F5";
+  body.style.color = "#AAAAAA";
+
   chrome.browserAction.setIcon({path:"images/icon.png"});
-
-  miningText.innerText="NOT MINING";
-  miningText.style.color="#969696";
-
-  miningIcon.src="images/icon-black.png";
-
-  miningButton.innerHTML="<i class=\"material-icons right\">monetization_on</i>START";
+  miningIcon.src="images/icon-new-op.png";
+  miningButton.innerHTML="START";
 }
