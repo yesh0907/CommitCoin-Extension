@@ -1,0 +1,40 @@
+body {
+  width: 225px;
+  height: 300px;
+  background-color: #F0F0F0;
+  text-align:center;
+  color: #444;
+  transition: background-color .75s ease;
+  font-size:16px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.top {
+  background-color: #F0F0F0;
+}
+
+.bottom {
+  background-color: white;
+}
+
+#miningText {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 28px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+#miningIcon {
+  width: 120px;
+}
+
+#miningButton{
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+
+#dash{
+  padding: 15px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+}
