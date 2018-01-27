@@ -6821,7 +6821,8 @@ module.exports = {
     ADD_STAR: 1,
     REMOVE_STAR: 2,
     START_MINING: 3,
-    STOP_MINING: 4
+    STOP_MINING: 4,
+    GET_CHAIN: 5
 }
 },{}],8:[function(require,module,exports) {
 module.exports = {
@@ -7522,6 +7523,12 @@ window.onload = () => {
                 sendData(c, data);
             });
         }, _config2.default.syncInterval);
+
+        chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
+            if (request.action == _actions2.default.GET_CHAIN) {
+                sendResponse({ blockchain: blockchain.getFullChain() });
+            }
+        });
 
         chrome.webRequest.onCompleted.addListener(function (details) {
             console.log('stared');
