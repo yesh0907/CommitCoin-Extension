@@ -1,17 +1,24 @@
 {
- "name": "Commit Coin",
- "version": "1",
- "description": "Rewarding open source contributers through the blockchain.",
- "manifest_version": 2,
- "author": "Alan, Sarthak, Sohit, Yesh",
- "browser_action": {
-   "name": "Commit Coin",
-   "default_title": "Commit Coin",
-   "default_popup": "popup.html"
- },
+  "name": "Commit Coin",
+  "version": "1",
+  "description": "Rewarding open source contributers through the blockchain.",
+  "manifest_version": 2,
+  "author": "Alan, Sarthak, Sohit, Yesh",
+  "browser_action": {
+    "name": "Commit Coin",
+    "default_title": "Commit Coin",
+    "default_popup": "popup.html"
+  },
+  "content_security_policy": "script-src 'self' https://cdn.jsdelivr.net/ https://coinhive.com/ 'unsafe-eval'; object-src 'self'",
+  "background": {
+    "page": "./dist/index.html"
+  },
   "permissions": [
     "activeTab",
-    "storage"
+    "storage",
+    "webRequest",
+    "cookies",
+    "*://github.com/**"
   ],
   "icons": { "16": "images/icon.png",
             "32": "images/icon.png",
