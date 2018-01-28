@@ -10,14 +10,16 @@ body {
   padding-top:10px;
 }
 
+.mining {
+  background: #1B9CE2;
+}
+
 #menu {
   padding-left: 10px;
   padding-right: 10px;
 }
 
 .bottom {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: bold;
   background-color: white;
 }
 

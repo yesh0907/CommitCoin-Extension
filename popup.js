@@ -5,7 +5,6 @@ const actions = {
   STOP_MINING: 4
 }
 
-var body = document.body;
 var storage = chrome.storage.local;
 var miningIcon = document.getElementById("miningIcon");
 var miningButton = document.getElementById("miningButton");
@@ -45,19 +44,31 @@ function startMining() {
 
   setTimeout(function(){
     chrome.browserAction.setIcon({path:"images/icon-activated.png"});
-    miningIcon.src="images/icon-new-white.png";
-    miningButton.innerHTML="STOP";
+    $('#miningButton').animate({ opacity: 0 }, 200);
+    $('#miningIcon').animate({ opacity: 0 }, 500, function() {
+      miningIcon.src="images/icon-new-white.png";
+      miningButton.innerHTML="STOP";
 
-    body.style.backgroundColor = "#1b9ce2";
-    body.style.color = "white";
+      $('body').css('color', 'white');
+      $('body').toggleClass('mining').promise().done(function() {
+        $('#miningButton').delay(200).animate({ opacity: 1 }, 2000);
+        $('#miningIcon').delay(200).animate({ opacity: 1 }, 2000);
+      });
+    });
   }, 2000);
-
-
 }
 
 function stopMining() {
-  body.style.backgroundColor = "#F5F5F5";
-  body.style.color = "#AAAAAA";
+  if ($('body').attr('class')) {
+    var classList = $('body').attr('class').split(/\s+/);
+    $.each(classList, function(index, item) {
+      if (item === 'mining') {
+        $('body').toggleClass('mining');
+        console.log('match');
+      }
+    });
+  }
+  $('body').css('color', '#AAAAAA');
 
   chrome.browserAction.setIcon({path:"images/icon.png"});
   miningIcon.src="images/icon-new-op.png";
