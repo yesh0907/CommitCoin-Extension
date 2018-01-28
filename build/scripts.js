@@ -62,13 +62,13 @@ var colors = new Array(
   $(document).ready(function() {
     $(window).scroll(function() {
       var scroll = $(window).scrollTop();
-      if (scroll > 350) {
+      if (scroll > 40) {
         $(".menu").css("background", "#1D2F3E");
-        $(".ant-menu-dark .ant-menu-item").css("color", "#ccc");
+        $("#navBar > li > a").css("color", "#ddd");
         console.log($('#navBar'));
       } else {
         $(".menu").css("background", "transparent");
-        $(".ant-menu-dark .ant-menu-item").css("color", "white");
+        $("#navBar > li > a").css("color", "black");
       }
     });
   });

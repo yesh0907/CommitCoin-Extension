@@ -69,7 +69,7 @@ require = (function (modules, cache, entry) {
 
   // Override the current require with this new one
   return newRequire;
-})({10:[function(require,module,exports) {
+})({12:[function(require,module,exports) {
 ;(function (root, factory) {
 	if (typeof exports === "object") {
 		// CommonJS
@@ -830,7 +830,7 @@ require = (function (modules, cache, entry) {
 	return CryptoJS;
 
 }));
-},{}],11:[function(require,module,exports) {
+},{}],13:[function(require,module,exports) {
 ;(function (root, factory) {
 	if (typeof exports === "object") {
 		// CommonJS
@@ -1135,7 +1135,7 @@ require = (function (modules, cache, entry) {
 	return CryptoJS;
 
 }));
-},{"./core":10}],12:[function(require,module,exports) {
+},{"./core":12}],14:[function(require,module,exports) {
 ;(function (root, factory) {
 	if (typeof exports === "object") {
 		// CommonJS
@@ -1212,7 +1212,7 @@ require = (function (modules, cache, entry) {
 	return CryptoJS.lib.WordArray;
 
 }));
-},{"./core":10}],13:[function(require,module,exports) {
+},{"./core":12}],15:[function(require,module,exports) {
 ;(function (root, factory) {
 	if (typeof exports === "object") {
 		// CommonJS
@@ -1362,7 +1362,7 @@ require = (function (modules, cache, entry) {
 	return CryptoJS.enc.Utf16;
 
 }));
-},{"./core":10}],15:[function(require,module,exports) {
+},{"./core":12}],16:[function(require,module,exports) {
 ;(function (root, factory) {
 	if (typeof exports === "object") {
 		// CommonJS
@@ -1498,7 +1498,7 @@ require = (function (modules, cache, entry) {
 	return CryptoJS.enc.Base64;
 
 }));
-},{"./core":10}],14:[function(require,module,exports) {
+},{"./core":12}],17:[function(require,module,exports) {
 ;(function (root, factory) {
 	if (typeof exports === "object") {
 		// CommonJS
@@ -1767,7 +1767,7 @@ require = (function (modules, cache, entry) {
 	return CryptoJS.MD5;
 
 }));
-},{"./core":10}],16:[function(require,module,exports) {
+},{"./core":12}],18:[function(require,module,exports) {
 ;(function (root, factory) {
 	if (typeof exports === "object") {
 		// CommonJS
@@ -1918,7 +1918,7 @@ require = (function (modules, cache, entry) {
 	return CryptoJS.SHA1;
 
 }));
-},{"./core":10}],17:[function(require,module,exports) {
+},{"./core":12}],19:[function(require,module,exports) {
 ;(function (root, factory) {
 	if (typeof exports === "object") {
 		// CommonJS
@@ -2118,7 +2118,7 @@ require = (function (modules, cache, entry) {
 	return CryptoJS.SHA256;
 
 }));
-},{"./core":10}],18:[function(require,module,exports) {
+},{"./core":12}],20:[function(require,module,exports) {
 ;(function (root, factory, undef) {
 	if (typeof exports === "object") {
 		// CommonJS
@@ -2199,7 +2199,7 @@ require = (function (modules, cache, entry) {
 	return CryptoJS.SHA224;
 
 }));
-},{"./core":10,"./sha256":17}],19:[function(require,module,exports) {
+},{"./core":12,"./sha256":19}],21:[function(require,module,exports) {
 ;(function (root, factory, undef) {
 	if (typeof exports === "object") {
 		// CommonJS
@@ -2523,7 +2523,7 @@ require = (function (modules, cache, entry) {
 	return CryptoJS.SHA512;
 
 }));
-},{"./core":10,"./x64-core":11}],20:[function(require,module,exports) {
+},{"./core":12,"./x64-core":13}],22:[function(require,module,exports) {
 ;(function (root, factory, undef) {
 	if (typeof exports === "object") {
 		// CommonJS
@@ -2607,7 +2607,7 @@ require = (function (modules, cache, entry) {
 	return CryptoJS.SHA384;
 
 }));
-},{"./core":10,"./x64-core":11,"./sha512":19}],21:[function(require,module,exports) {
+},{"./core":12,"./x64-core":13,"./sha512":21}],23:[function(require,module,exports) {
 ;(function (root, factory, undef) {
 	if (typeof exports === "object") {
 		// CommonJS
@@ -2931,7 +2931,7 @@ require = (function (modules, cache, entry) {
 	return CryptoJS.SHA3;
 
 }));
-},{"./core":10,"./x64-core":11}],22:[function(require,module,exports) {
+},{"./core":12,"./x64-core":13}],24:[function(require,module,exports) {
 ;(function (root, factory) {
 	if (typeof exports === "object") {
 		// CommonJS
@@ -3199,7 +3199,7 @@ require = (function (modules, cache, entry) {
 	return CryptoJS.RIPEMD160;
 
 }));
-},{"./core":10}],23:[function(require,module,exports) {
+},{"./core":12}],25:[function(require,module,exports) {
 ;(function (root, factory) {
 	if (typeof exports === "object") {
 		// CommonJS
@@ -3343,7 +3343,7 @@ require = (function (modules, cache, entry) {
 
 
 }));
-},{"./core":10}],24:[function(require,module,exports) {
+},{"./core":12}],26:[function(require,module,exports) {
 ;(function (root, factory, undef) {
 	if (typeof exports === "object") {
 		// CommonJS
@@ -3489,7 +3489,7 @@ require = (function (modules, cache, entry) {
 	return CryptoJS.PBKDF2;
 
 }));
-},{"./core":10,"./sha1":16,"./hmac":23}],25:[function(require,module,exports) {
+},{"./core":12,"./sha1":18,"./hmac":25}],27:[function(require,module,exports) {
 ;(function (root, factory, undef) {
 	if (typeof exports === "object") {
 		// CommonJS
@@ -3622,7 +3622,7 @@ require = (function (modules, cache, entry) {
 	return CryptoJS.EvpKDF;
 
 }));
-},{"./core":10,"./sha1":16,"./hmac":23}],26:[function(require,module,exports) {
+},{"./core":12,"./sha1":18,"./hmac":25}],28:[function(require,module,exports) {
 ;(function (root, factory, undef) {
 	if (typeof exports === "object") {
 		// CommonJS
@@ -4503,7 +4503,7 @@ require = (function (modules, cache, entry) {
 
 
 }));
-},{"./core":10,"./evpkdf":25}],27:[function(require,module,exports) {
+},{"./core":12,"./evpkdf":27}],29:[function(require,module,exports) {
 ;(function (root, factory, undef) {
 	if (typeof exports === "object") {
 		// CommonJS
@@ -4582,7 +4582,7 @@ require = (function (modules, cache, entry) {
 	return CryptoJS.mode.CFB;
 
 }));
-},{"./core":10,"./cipher-core":26}],28:[function(require,module,exports) {
+},{"./core":12,"./cipher-core":28}],30:[function(require,module,exports) {
 ;(function (root, factory, undef) {
 	if (typeof exports === "object") {
 		// CommonJS
@@ -4641,7 +4641,7 @@ require = (function (modules, cache, entry) {
 	return CryptoJS.mode.CTR;
 
 }));
-},{"./core":10,"./cipher-core":26}],29:[function(require,module,exports) {
+},{"./core":12,"./cipher-core":28}],31:[function(require,module,exports) {
 ;(function (root, factory, undef) {
 	if (typeof exports === "object") {
 		// CommonJS
@@ -4758,7 +4758,7 @@ require = (function (modules, cache, entry) {
 	return CryptoJS.mode.CTRGladman;
 
 }));
-},{"./core":10,"./cipher-core":26}],30:[function(require,module,exports) {
+},{"./core":12,"./cipher-core":28}],32:[function(require,module,exports) {
 ;(function (root, factory, undef) {
 	if (typeof exports === "object") {
 		// CommonJS
@@ -4813,7 +4813,7 @@ require = (function (modules, cache, entry) {
 	return CryptoJS.mode.OFB;
 
 }));
-},{"./core":10,"./cipher-core":26}],31:[function(require,module,exports) {
+},{"./core":12,"./cipher-core":28}],33:[function(require,module,exports) {
 ;(function (root, factory, undef) {
 	if (typeof exports === "object") {
 		// CommonJS
@@ -4854,7 +4854,7 @@ require = (function (modules, cache, entry) {
 	return CryptoJS.mode.ECB;
 
 }));
-},{"./core":10,"./cipher-core":26}],32:[function(require,module,exports) {
+},{"./core":12,"./cipher-core":28}],34:[function(require,module,exports) {
 ;(function (root, factory, undef) {
 	if (typeof exports === "object") {
 		// CommonJS
@@ -4904,7 +4904,7 @@ require = (function (modules, cache, entry) {
 	return CryptoJS.pad.Ansix923;
 
 }));
-},{"./core":10,"./cipher-core":26}],33:[function(require,module,exports) {
+},{"./core":12,"./cipher-core":28}],35:[function(require,module,exports) {
 ;(function (root, factory, undef) {
 	if (typeof exports === "object") {
 		// CommonJS
@@ -4949,7 +4949,7 @@ require = (function (modules, cache, entry) {
 	return CryptoJS.pad.Iso10126;
 
 }));
-},{"./core":10,"./cipher-core":26}],34:[function(require,module,exports) {
+},{"./core":12,"./cipher-core":28}],36:[function(require,module,exports) {
 ;(function (root, factory, undef) {
 	if (typeof exports === "object") {
 		// CommonJS
@@ -4990,7 +4990,7 @@ require = (function (modules, cache, entry) {
 	return CryptoJS.pad.Iso97971;
 
 }));
-},{"./core":10,"./cipher-core":26}],35:[function(require,module,exports) {
+},{"./core":12,"./cipher-core":28}],37:[function(require,module,exports) {
 ;(function (root, factory, undef) {
 	if (typeof exports === "object") {
 		// CommonJS
@@ -5036,7 +5036,7 @@ require = (function (modules, cache, entry) {
 	return CryptoJS.pad.ZeroPadding;
 
 }));
-},{"./core":10,"./cipher-core":26}],36:[function(require,module,exports) {
+},{"./core":12,"./cipher-core":28}],38:[function(require,module,exports) {
 ;(function (root, factory, undef) {
 	if (typeof exports === "object") {
 		// CommonJS
@@ -5067,7 +5067,7 @@ require = (function (modules, cache, entry) {
 	return CryptoJS.pad.NoPadding;
 
 }));
-},{"./core":10,"./cipher-core":26}],37:[function(require,module,exports) {
+},{"./core":12,"./cipher-core":28}],39:[function(require,module,exports) {
 ;(function (root, factory, undef) {
 	if (typeof exports === "object") {
 		// CommonJS
@@ -5134,7 +5134,7 @@ require = (function (modules, cache, entry) {
 	return CryptoJS.format.Hex;
 
 }));
-},{"./core":10,"./cipher-core":26}],38:[function(require,module,exports) {
+},{"./core":12,"./cipher-core":28}],40:[function(require,module,exports) {
 ;(function (root, factory, undef) {
 	if (typeof exports === "object") {
 		// CommonJS
@@ -5367,7 +5367,7 @@ require = (function (modules, cache, entry) {
 	return CryptoJS.AES;
 
 }));
-},{"./core":10,"./enc-base64":15,"./md5":14,"./evpkdf":25,"./cipher-core":26}],39:[function(require,module,exports) {
+},{"./core":12,"./enc-base64":16,"./md5":17,"./evpkdf":27,"./cipher-core":28}],41:[function(require,module,exports) {
 ;(function (root, factory, undef) {
 	if (typeof exports === "object") {
 		// CommonJS
@@ -6138,7 +6138,7 @@ require = (function (modules, cache, entry) {
 	return CryptoJS.TripleDES;
 
 }));
-},{"./core":10,"./enc-base64":15,"./md5":14,"./evpkdf":25,"./cipher-core":26}],40:[function(require,module,exports) {
+},{"./core":12,"./enc-base64":16,"./md5":17,"./evpkdf":27,"./cipher-core":28}],42:[function(require,module,exports) {
 ;(function (root, factory, undef) {
 	if (typeof exports === "object") {
 		// CommonJS
@@ -6278,7 +6278,7 @@ require = (function (modules, cache, entry) {
 	return CryptoJS.RC4;
 
 }));
-},{"./core":10,"./enc-base64":15,"./md5":14,"./evpkdf":25,"./cipher-core":26}],41:[function(require,module,exports) {
+},{"./core":12,"./enc-base64":16,"./md5":17,"./evpkdf":27,"./cipher-core":28}],43:[function(require,module,exports) {
 ;(function (root, factory, undef) {
 	if (typeof exports === "object") {
 		// CommonJS
@@ -6471,7 +6471,7 @@ require = (function (modules, cache, entry) {
 	return CryptoJS.Rabbit;
 
 }));
-},{"./core":10,"./enc-base64":15,"./md5":14,"./evpkdf":25,"./cipher-core":26}],42:[function(require,module,exports) {
+},{"./core":12,"./enc-base64":16,"./md5":17,"./evpkdf":27,"./cipher-core":28}],44:[function(require,module,exports) {
 ;(function (root, factory, undef) {
 	if (typeof exports === "object") {
 		// CommonJS
@@ -6662,7 +6662,7 @@ require = (function (modules, cache, entry) {
 	return CryptoJS.RabbitLegacy;
 
 }));
-},{"./core":10,"./enc-base64":15,"./md5":14,"./evpkdf":25,"./cipher-core":26}],9:[function(require,module,exports) {
+},{"./core":12,"./enc-base64":16,"./md5":17,"./evpkdf":27,"./cipher-core":28}],11:[function(require,module,exports) {
 ;(function (root, factory, undef) {
 	if (typeof exports === "object") {
 		// CommonJS
@@ -6681,7 +6681,7 @@ require = (function (modules, cache, entry) {
 	return CryptoJS;
 
 }));
-},{"./core":10,"./x64-core":11,"./lib-typedarrays":12,"./enc-utf16":13,"./enc-base64":15,"./md5":14,"./sha1":16,"./sha256":17,"./sha224":18,"./sha512":19,"./sha384":20,"./sha3":21,"./ripemd160":22,"./hmac":23,"./pbkdf2":24,"./evpkdf":25,"./cipher-core":26,"./mode-cfb":27,"./mode-ctr":28,"./mode-ctr-gladman":29,"./mode-ofb":30,"./mode-ecb":31,"./pad-ansix923":32,"./pad-iso10126":33,"./pad-iso97971":34,"./pad-zeropadding":35,"./pad-nopadding":36,"./format-hex":37,"./aes":38,"./tripledes":39,"./rc4":40,"./rabbit":41,"./rabbit-legacy":42}],5:[function(require,module,exports) {
+},{"./core":12,"./x64-core":13,"./lib-typedarrays":14,"./enc-utf16":15,"./enc-base64":16,"./md5":17,"./sha1":18,"./sha256":19,"./sha224":20,"./sha512":21,"./sha384":22,"./sha3":23,"./ripemd160":24,"./hmac":25,"./pbkdf2":26,"./evpkdf":27,"./cipher-core":28,"./mode-cfb":29,"./mode-ctr":30,"./mode-ctr-gladman":31,"./mode-ofb":32,"./mode-ecb":33,"./pad-ansix923":34,"./pad-iso10126":35,"./pad-iso97971":36,"./pad-zeropadding":37,"./pad-nopadding":38,"./format-hex":39,"./aes":40,"./tripledes":41,"./rc4":42,"./rabbit":43,"./rabbit-legacy":44}],5:[function(require,module,exports) {
 const CryptoJS = require('crypto-js');
 
 class Block {
@@ -6717,7 +6717,7 @@ class Block {
 }
 
 module.exports = Block;
-},{"crypto-js":9}],3:[function(require,module,exports) {
+},{"crypto-js":11}],4:[function(require,module,exports) {
 const Block = require('./Block');
 
 class Blockchain {
@@ -6812,11 +6812,11 @@ class Blockchain {
 }
 
 module.exports = Blockchain;
-},{"./Block":5}],4:[function(require,module,exports) {
+},{"./Block":5}],6:[function(require,module,exports) {
 module.exports = {
     syncInterval: 5000
 }
-},{}],6:[function(require,module,exports) {
+},{}],8:[function(require,module,exports) {
 module.exports = {
     ADD_STAR: 1,
     REMOVE_STAR: 2,
@@ -6829,7 +6829,7 @@ module.exports = {
     ADD_BLOCK: 1,
     SYNC_CHAIN: 2
 };
-},{}],8:[function(require,module,exports) {
+},{}],10:[function(require,module,exports) {
 /*
  Copyright (c) 2013, Rodrigo González, Sapienlab All Rights Reserved.
  Available via MIT LICENSE. See https://github.com/roro89/jsonpack/blob/master/LICENSE.md for details.
@@ -7496,8 +7496,7 @@ window.onload = () => {
     });
 
     network.on('channel:opened:blockchain', function (id, dc) {
-        if (blockchain === null) blockchain = new _Blockchain2.default();
-        console.log('connected');
+
         dc.onmessage = function (evt) {
             let data = _jsonpack2.default.unpack(evt.data);
             if (data.event === _events2.default.ADD_BLOCK) {
@@ -7514,62 +7513,67 @@ window.onload = () => {
 
         channels.push(dc);
 
-        setInterval(() => {
-            channels.forEach(c => {
-                let data = {
-                    event: _events2.default.SYNC_CHAIN,
-                    chain: blockchain.getFullChain()
-                };
-                sendData(c, data);
-            });
-        }, _config2.default.syncInterval);
+        if (blockchain === null) {
+            blockchain = new _Blockchain2.default();
+            console.log('connected');
 
-        chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
-            if (request.action == _actions2.default.GET_CHAIN) {
-                sendResponse({ blockchain: blockchain.getFullChain() });
-            }
-        });
-
-        chrome.webRequest.onCompleted.addListener(function (details) {
-            console.log('stared');
-            chrome.cookies.get({
-                url: 'https://github.com',
-                name: 'dotcom_user'
-            }, cookie => {
+            setInterval(() => {
                 channels.forEach(c => {
                     let data = {
-                        event: _events2.default.ADD_BLOCK,
-                        block: blockchain.generateBlock({
-                            action: _actions2.default.ADD_STAR,
-                            user: cookie.value,
-                            repo: details.url.split('/')[3] + '/' + details.url.split('/')[4]
-                        }).toJSON()
+                        event: _events2.default.SYNC_CHAIN,
+                        chain: blockchain.getFullChain()
                     };
                     sendData(c, data);
                 });
+            }, _config2.default.syncInterval);
+
+            chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
+                if (request.action == _actions2.default.GET_CHAIN) {
+                    sendResponse({ blockchain: blockchain.getFullChain() });
+                }
             });
-        }, { urls: ['https://github.com/*/star'] });
 
-        chrome.webRequest.onCompleted.addListener(function (details) {
-            console.log('unstared');
-
-            chrome.cookies.get({
-                url: 'https://github.com',
-                name: 'dotcom_user'
-            }, cookie => {
-                channels.forEach(c => {
-                    let data = {
-                        event: _events2.default.ADD_BLOCK,
-                        block: blockchain.generateBlock({
-                            action: _actions2.default.REMOVE_STAR,
-                            user: cookie.value,
-                            repo: details.url.split('/')[3] + '/' + details.url.split('/')[4]
-                        }).toJSON()
-                    };
-                    sendData(c, data);
+            chrome.webRequest.onCompleted.addListener(function (details) {
+                console.log('stared');
+                chrome.cookies.get({
+                    url: 'https://github.com',
+                    name: 'dotcom_user'
+                }, cookie => {
+                    channels.forEach(c => {
+                        let data = {
+                            event: _events2.default.ADD_BLOCK,
+                            block: blockchain.generateBlock({
+                                action: _actions2.default.ADD_STAR,
+                                user: cookie.value,
+                                repo: details.url.split('/')[3] + '/' + details.url.split('/')[4]
+                            }).toJSON()
+                        };
+                        sendData(c, data);
+                    });
                 });
-            });
-        }, { urls: ['https://github.com/*/unstar'] });
+            }, { urls: ['https://github.com/*/star'] });
+
+            chrome.webRequest.onCompleted.addListener(function (details) {
+                console.log('unstared');
+
+                chrome.cookies.get({
+                    url: 'https://github.com',
+                    name: 'dotcom_user'
+                }, cookie => {
+                    channels.forEach(c => {
+                        let data = {
+                            event: _events2.default.ADD_BLOCK,
+                            block: blockchain.generateBlock({
+                                action: _actions2.default.REMOVE_STAR,
+                                user: cookie.value,
+                                repo: details.url.split('/')[3] + '/' + details.url.split('/')[4]
+                            }).toJSON()
+                        };
+                        sendData(c, data);
+                    });
+                });
+            }, { urls: ['https://github.com/*/unstar'] });
+        }
     });
 
     network.on('channel:closed:blockchain', function (id, dc) {
@@ -7579,5 +7583,5 @@ window.onload = () => {
         }
     });
 };
-},{"./Blockchain":3,"./Block":5,"./config":4,"./actions":6,"./events":7,"jsonpack":8}]},{},[2])
+},{"./Blockchain":4,"./Block":5,"./config":6,"./actions":8,"./events":7,"jsonpack":10}]},{},[2])
 //# sourceMappingURL=/dist/commitcoin-core.map
